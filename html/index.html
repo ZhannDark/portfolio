@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+<header>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li class="active"><a href="#home">Home</a></li>
+            <li><a href="#works">Projects</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </nav>
+</header>
+<section id="home">
+    <div class="hero">
+        <div class="logo">
+            <img src="/portfolio/pictures/IMG_3945.png" class="logo__img" alt="Zhanna Zhanashova">
+            <div>
+                <h1>Zhanna Zhanashova</h1>
+                <p>Bachelor student of Computer Science</p>
+            </div>
+        </div>
+        <div>
+            <h1 class="animated-text">First Think Then Design</h1>
+        </div>
+    </div>
+</section>
+<section id="name">
+    <div class="all-projects">
+        <strong>Projects</strong>
+    </div>
+</section>
+<section id="works">
+    <div class="projects">
+        <div class="project-card">
+            <img src="/portfolio/pictures/project1_img.png">
+            <h3>SDU Scout Robot</h3>
+            <p>A robot that helps students find available study rooms in real time.</p>
+            <a href="project1_html.html"><button class="view-details-btn">View Details</button></a>
+        </div>
+        <div class="project-card">
+            <img src="/portfolio/pictures/project2_img.png">
+            <h3>AyPost App</h3>
+            <p>Mobile app for pre-ordering, paying, and picking up market items without checkout lines.</p>
+            <a href="project2_html.html"><button class="view-details-btn">View Details</button></a>
+        </div>
+        <div class="project-card">
+            <img src="/portfolio/pictures/project3_img.png">
+            <h3>Sleep Tracker</h3>
+            <p>Improved version of app for students to improve their sleep habits</p>
+            <a href="project3_html.html"><button class="view-details-btn">View Details</button></a>
+        </div>
+    </div>
+</section>
+<section id="about">
+    <div class="about-me">
+        <div class="about-me-header">
+            <h2>About Me</h2>
+        </div>
+        <div class="about-me-content">
+            <p>Hello! I'm <strong>Zhanna Zhanashova</strong>, a passionate Bachelor student of
+                Computer Science at SDU. With a deep interest in UX/UI design and innovative
+                technology solutions, I aim to blend creativity with functionality in every project I undertake.
+                I believe in the power of design to not only enhance user experience but also to solve
+                real-world problems.</p>
+        </div>
+    </div>
+</section>
+<section style="margin-bottom: 50px">
+    <div class="about-me">
+        <div class="about-me-header">
+            <h2>Summary of Projects</h2>
+        </div>
+        <div class="about-me-content">
+            <p>Throughout the course, my perspective on UX/UI design has evolved significantly.
+                Initially, I saw it as a field focused mainly on creating visually appealing interfaces.
+                However, after working on three distinct projects, I've come to realize that UX/UI is about
+                much more than aesthetics—it's about user-centric problem-solving, research, and
+                continuous iteration.</p>
+
+            <div class="project">
+                <h3>Project 1: Sleep-Tracking App Design</h3>
+                <p>In this project, I focused on understanding user behavior and mental models to improve
+                    sleep patterns through app features. The experience emphasized the importance of
+                    psychological aspects and the user journey in crafting a personalized, effective experience.
+                    I learned that UX is not just about the interface but about creating a product that
+                    serves the user’s deeper needs and goals.</p>
+            </div>
+
+            <div class="project">
+                <h3>Project 2: Improving the Shopping Experience</h3>
+                <p>This project shifted my focus to real-world problem solving. The redesign of the SDU Market,
+                    with the introduction of the postomat system, focused on reducing friction in the
+                    shopping process and prioritizing convenience. Through data collection, user feedback,
+                    and iterative testing, I realized how crucial it is to integrate user pain points and
+                    behaviors into the design, while balancing technical feasibility with user satisfaction.</p>
+            </div>
+
+            <div class="project">
+                <h3>Project 3: SDU Scout Robot</h3>
+                <p>In this project, I expanded my perspective to include interaction design and
+                    user research. The SDU Scout Robot aimed to help students find study rooms,
+                    highlighting the importance of integrating designs into users' daily routines.
+                    This project taught me that UX/UI design must also account for the broader ecosystem
+                    in which the product exists and ensure the design is adaptable to various use cases.</p>
+            </div>
+            <h3>What is UX/UI now?</h3>
+            <p>Overall, my understanding of UX/UI has grown into a process of crafting experiences
+                that are intuitive, efficient, and deeply aligned with user needs. It’s not just about
+                making things look nice—it’s about creating empathy for users, solving real problems, and
+                ensuring that every design decision enhances the user experience. UX/UI design is a balance
+                of creativity, functionality, and empathy, ensuring the final product is not only usable
+                but also meaningful.</p>
+        </div>
+    </div>
+</section>
+
+
+
+<script>
+    window.addEventListener("scroll", function () {
+        const navbar = document.querySelector(".navbar");
+        if (window.scrollY > 50) { // Порог, когда навбар изменяет стиль
+            navbar.classList.add("scrolled");
+        } else {
+            navbar.classList.remove("scrolled");
+        }
+    });
+</script>
+</body>
+</html>
